@@ -31,7 +31,7 @@ I dati aziendali (telefono, email, indirizzo, P.IVA) compaiono in `index.html` i
 ## Da proposta a sito ufficiale
 
 1. In `index.html` e `privacy.html` togliete `<meta name="robots" content="noindex, nofollow">`.
-2. Togliete la riga `<p class="credit">Proposta di sito realizzata da Tramontis …</p>` dal footer di entrambe le pagine.
+2. Togliete la fascia demo e la filigrana (`<div class="demo-bar">` e `<div class="demo-watermark">`, con il relativo CSS in fondo a `style.css`) e la riga `<p class="credit">Proposta di sito realizzata da Tramontis …</p>` dal footer di entrambe le pagine.
 3. Aggiungete il dominio: in `index.html` aggiornate `og:image` e `image` nel JSON-LD (ora puntano a `https://luckylori07.github.io/all-in-one/…`) e aggiungete `og:url`, `<link rel="canonical">` e `url` nel JSON-LD. Poi create un file `CNAME` con il dominio e configurate il DNS (Settings → Pages → Custom domain).
 4. Facoltativo: aggiungete `robots.txt` e `sitemap.xml`; se esiste la pagina Facebook ufficiale, inserite il link nel footer e `sameAs` nel JSON-LD.
 
